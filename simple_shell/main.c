@@ -67,7 +67,7 @@ int main() {
 				}
                 	        for (int i=0; i<strlen(buff2); i++) {
                         	        // check and copy
-					int intchar = (int)(*(buff2+i));
+					                int intchar = (int)(*(buff2+i));
                                 	if (*(buff2+i) == '\0') {
                                         	if (i == 0) {
                                                 	printf("empty string\n");
@@ -160,13 +160,12 @@ int main() {
 				printf("something's wrong ... try again \n");
 				exit(1);
 			}
-			// kill the children in case something went wrong 
+			// delete the children in case something went wrong 
 			// go back to the parent
 			exit(1);
 		} else {
 			sleep(2);
 		}
-		//printf("\n");
 
 	}
 }
